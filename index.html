@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atividade: Layout com Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="py-5 bg-light border-bottom mb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="display-6 text-center mb-3">Construindo um Layout com Bootstrap</h1>
+            <p class="lead text-center mb-0">
+              Esta página demonstra o uso das classes padrão do Bootstrap para organizar
+              conteúdo em containers, linhas, colunas, cards e um formulário responsivo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="mb-5">
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a
+                volutpat eros. Sed id sapien a arcu faucibus efficitur. Donec nec
+                dui bibendum, vestibulum justo in, luctus nisl. Aliquam erat
+                volutpat. Vivamus congue, erat sed vestibulum euismod, mauris
+                magna iaculis felis, sed facilisis dolor libero at nibh.
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <p>
+                Integer ac nunc non turpis facilisis gravida. In hac habitasse
+                platea dictumst. Praesent ultrices, lorem non euismod varius,
+                lectus justo convallis felis, sed ultricies lorem ipsum eget
+                nulla. Curabitur ac sapien in tellus lacinia elementum.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://picsum.photos/seed/card1/600/400" class="card-img-top" alt="Imagem ilustrativa do card 1" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 1</h5>
+                  <p class="card-text">
+                    Exemplo de card usando Bootstrap. Em telas grandes, os três
+                    cards ficam lado a lado; em telas menores, se ajustam em
+                    uma coluna.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+                  <a class="btn btn-outline-primary" href="#form-contato">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://picsum.photos/seed/card2/600/400" class="card-img-top" alt="Imagem ilustrativa do card 2" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 2</h5>
+                  <p class="card-text">
+                    Cards são componentes prontos com imagem, título e texto. Você
+                    pode combiná-los com utilitários de espaçamento e tipografia.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+                  <a class="btn btn-outline-primary" href="#form-contato">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow-sm">
+                <img src="https://picsum.photos/seed/card3/600/400" class="card-img-top" alt="Imagem ilustrativa do card 3" />
+                <div class="card-body">
+                  <h5 class="card-title">Card 3</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, asperiores odio? Quas quos odit quis, iure cum nihil voluptatibus aliquam dolorem quo laborum eaque amet? Saepe deleniti quos amet est.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pt-0 pb-3 px-3">
+                  <a class="btn btn-outline-primary" href="#form-contato">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="form-contato" class="mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="card shadow-sm">
+                <div class="card-body p-4">
+                  <h2 class="h4 mb-4">Contato</h2>
+                  <form novalidate>
+                    <div class="mb-3">
+                      <label for="nome" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="email" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="mensagem" class="form-label">Mensagem</label>
+                      <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="py-4 bg-light border-top mt-auto">
+      <div class="container text-center small text-muted">
+        Atividade — José Guilherme 
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
